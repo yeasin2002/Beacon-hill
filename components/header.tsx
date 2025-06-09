@@ -1,5 +1,5 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 const navigationItems = [
   { name: "HOME", href: "/", active: true },
@@ -7,7 +7,7 @@ const navigationItems = [
   { name: "SERVICE", href: "/service" },
   { name: "HOSPITAL", href: "/hospital" },
   { name: "CONTACT", href: "/contact" },
-]
+];
 
 export default function Header() {
   return (
@@ -25,7 +25,9 @@ export default function Header() {
                   </div>
                 </div>
               </div>
-              <span className="text-blue-600 font-bold text-lg">MEDICA</span>
+              <span className="text-blue-600 font-bold text-lg">
+                Beacon Hill
+              </span>
             </div>
           </div>
 
@@ -36,7 +38,9 @@ export default function Header() {
                 key={item.name}
                 href={item.href}
                 className={`text-sm font-medium transition-colors ${
-                  item.active ? "text-green-500 border-b-2 border-green-500 pb-1" : "text-blue-600 hover:text-green-500"
+                  item.active
+                    ? "text-green-500 border-b-2 border-green-500 pb-1"
+                    : "text-blue-600 hover:text-green-500"
                 }`}
               >
                 {item.name}
@@ -45,9 +49,11 @@ export default function Header() {
           </nav>
 
           {/* Login Button */}
-          <Button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full">Login</Button>
+          <Button className="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full">
+            Login
+          </Button>
         </div>
       </div>
     </header>
-  )
+  );
 }
