@@ -11,26 +11,6 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-8 items-center min-h-screen py-12">
           {/* Left Content */}
           <div className="relative z-10">
-            {/* Decorative Dots Pattern */}
-            <div className="absolute -left-8 top-0 w-16 h-32">
-              <div className="grid grid-cols-4 gap-1">
-                {Array.from({ length: 32 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="w-1 h-1 bg-blue-600 rounded-full opacity-60"
-                  ></div>
-                ))}
-              </div>
-            </div>
-
-            {/* Green F Shape */}
-            <div className="absolute -left-4 top-8">
-              <div className="w-8 h-16 bg-green-500 relative">
-                <div className="absolute top-0 right-0 w-4 h-2 bg-green-500"></div>
-                <div className="absolute top-6 right-0 w-3 h-2 bg-green-500"></div>
-              </div>
-            </div>
-
             {/* Main Heading */}
             <div className="space-y-4 mb-8">
               <h1 className="text-4xl lg:text-6xl font-bold text-blue-600 leading-tight">
