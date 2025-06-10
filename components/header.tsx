@@ -1,4 +1,6 @@
+import logo from "@/assets/beacon-hill-logo.png";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import Link from "next/link";
 
 const navigationItems = [
@@ -14,23 +16,8 @@ export default function Header() {
     <header className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
+          <Image src={logo} alt="Logo" className="w-48" />
           {/* Logo */}
-          <div className="flex items-center">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
-                <div className="w-4 h-4 bg-white rounded-full relative">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="w-3 h-0.5 bg-blue-600"></div>
-                    <div className="w-0.5 h-3 bg-blue-600 absolute"></div>
-                  </div>
-                </div>
-              </div>
-              <span className="text-blue-600 font-bold text-lg">
-                Beacon Hill
-              </span>
-            </div>
-          </div>
-
           {/* Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {navigationItems.map((item) => (
